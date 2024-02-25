@@ -3,30 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Movie Ticket Booking</title>
+    <title>Books</title>
     <link rel="stylesheet" href="../css/style.css"/>
+
 </head>
 <body>
-    <h1>Movie Ticket Booking</h1>
+    <h1>Books</h1>
     <table>
         <tr>
             <th>Title</th>
-            <th>Director</th>
-            <th>Release Date</th>
+            <th>Author</th>
             <th>Action</th>
         </tr>
-        <% for(var i=0; i < movies.length; i++) { %>
+        <% for(var i=0; i < books.length; i++) { %>
             <tr>
-                <td><%= movies[i].title %></td>
-                <td><%= movies[i].director %></td>
-                <td><%= movies[i].releaseDate %></td>
+                <td><%= books[i].title %></td>
+                <td><%= books[i].author %></td>
                 <td>
-                    <a href="/movie/<%= movies[i].id %>">Details</a>
-                    <a href="/booking/<%= movies[i].id %>">Book Tickets</a>
+                    <a href="/book/<%= books[i].id %>">View</a>
+                    <a href="/update/<%= books[i].id %>">Edit</a>
+                    <a href="/delete/<%= books[i].id %>">Delete</a>
                 </td>
             </tr>
         <% } %>
     </table>
-    <a href="/add_movie">Add New Movie</a>
+    <a href="/create">Create New Book</a>
 </body>
 </html>
