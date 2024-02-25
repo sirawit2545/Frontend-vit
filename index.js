@@ -11,7 +11,7 @@ var bodyParser = require('body-parser')
 
 //const base_url = "http://localhost:3000"
 const base_url = "http://node56386-noterest.proen.app.ruk-com.cloud"
-http://node56384-noderest-test1.proen.app.ruk-com.cloud/
+http://node56386-noterest.proen.app.ruk-com.cloud:11537/
 //const base_url = "http://10.104.7.149"
 
 
